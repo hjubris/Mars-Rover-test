@@ -21,7 +21,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -251,7 +251,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 45c55192fddcf3e67a4b5c3361eb9501
+      Hash: 9b63ff4dcc4f89be139114a042cdb746
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -551,5 +551,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 20
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Utente/Documents/GitHub/Mars-Rover-test/build
+  - Assets/Scenes/MainScene.unity
+  playerPath: C:/Users/Utente/Documents/GitHub/Mars-Rover-test/build/1.1

@@ -4448,10 +4448,10 @@ public:
 	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___warningText_5;
 	// TMPro.TextMeshProUGUI PlayerController::coordinates
 	TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * ___coordinates_6;
-	// System.Int32 PlayerController::speed
-	int32_t ___speed_7;
 	// UnityEngine.Camera PlayerController::mainCamera
-	Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * ___mainCamera_8;
+	Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * ___mainCamera_7;
+	// System.Int32 PlayerController::speed
+	int32_t ___speed_8;
 
 public:
 	inline static int32_t get_offset_of_boundary_4() { return static_cast<int32_t>(offsetof(PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9, ___boundary_4)); }
@@ -4480,21 +4480,21 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___coordinates_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_speed_7() { return static_cast<int32_t>(offsetof(PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9, ___speed_7)); }
-	inline int32_t get_speed_7() const { return ___speed_7; }
-	inline int32_t* get_address_of_speed_7() { return &___speed_7; }
-	inline void set_speed_7(int32_t value)
+	inline static int32_t get_offset_of_mainCamera_7() { return static_cast<int32_t>(offsetof(PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9, ___mainCamera_7)); }
+	inline Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * get_mainCamera_7() const { return ___mainCamera_7; }
+	inline Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C ** get_address_of_mainCamera_7() { return &___mainCamera_7; }
+	inline void set_mainCamera_7(Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * value)
 	{
-		___speed_7 = value;
+		___mainCamera_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___mainCamera_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_mainCamera_8() { return static_cast<int32_t>(offsetof(PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9, ___mainCamera_8)); }
-	inline Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * get_mainCamera_8() const { return ___mainCamera_8; }
-	inline Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C ** get_address_of_mainCamera_8() { return &___mainCamera_8; }
-	inline void set_mainCamera_8(Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * value)
+	inline static int32_t get_offset_of_speed_8() { return static_cast<int32_t>(offsetof(PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9, ___speed_8)); }
+	inline int32_t get_speed_8() const { return ___speed_8; }
+	inline int32_t* get_address_of_speed_8() { return &___speed_8; }
+	inline void set_speed_8(int32_t value)
 	{
-		___mainCamera_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___mainCamera_8), (void*)value);
+		___speed_8 = value;
 	}
 };
 
@@ -9070,7 +9070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_MoveRover_m3FB5309BDE74
 		L_5 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
 		L_6 = Vector3_get_forward_m3082920F8A24AA02E4F542B6771EB0B63A91AC90(/*hidden argument*/NULL);
-		int32_t L_7 = __this->get_speed_7();
+		int32_t L_7 = __this->get_speed_8();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8;
 		L_8 = Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline(L_6, ((float)((float)L_7)), /*hidden argument*/NULL);
 		Transform_Translate_m24A8CB13E2AAB0C17EE8FE593266CF463E0B02D0(L_5, L_8, /*hidden argument*/NULL);
@@ -9094,7 +9094,7 @@ IL_0046:
 		L_10 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11;
 		L_11 = Vector3_get_back_mD521DF1A2C26E145578E07D618E1E4D08A1C6220(/*hidden argument*/NULL);
-		int32_t L_12 = __this->get_speed_7();
+		int32_t L_12 = __this->get_speed_8();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13;
 		L_13 = Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline(L_11, ((float)((float)L_12)), /*hidden argument*/NULL);
 		Transform_Translate_m24A8CB13E2AAB0C17EE8FE593266CF463E0B02D0(L_10, L_13, /*hidden argument*/NULL);
@@ -9127,7 +9127,7 @@ IL_0073:
 		L_20 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_19, /*hidden argument*/NULL);
 		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_18, L_20, /*hidden argument*/NULL);
 		// mainCamera.transform.localRotation = Quaternion.Euler(rot); //update the camera's transform
-		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_21 = __this->get_mainCamera_8();
+		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_21 = __this->get_mainCamera_7();
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_22;
 		L_22 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_21, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_23 = V_0;
@@ -9163,7 +9163,7 @@ IL_00ca:
 		L_31 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_30, /*hidden argument*/NULL);
 		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_29, L_31, /*hidden argument*/NULL);
 		// mainCamera.transform.localRotation = Quaternion.Euler(rot); //update the camera's transform
-		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_32 = __this->get_mainCamera_8();
+		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_32 = __this->get_mainCamera_7();
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_33;
 		L_33 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_32, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_34 = V_0;
@@ -9198,17 +9198,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_OnCollisionExit_m20AC86
 		// warningText.alpha = 0;
 		TextMeshProUGUI_tCC5BE8A76E6E9AF92521A462E8D81ACFBA7C85F1 * L_0 = __this->get_warningText_5();
 		TMP_Text_set_alpha_m5483A31A2F8212EF365BE3F4CCF69ACBAD01CCBC(L_0, (0.0f), /*hidden argument*/NULL);
-		// }
-		return;
-	}
-}
-// System.Void PlayerController::ChangeSpeed(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController_ChangeSpeed_m2C779D9BF7752D6255166D95F900D15395A2A6D4 (PlayerController_tDFE946D0FE1CB988FC3DC902E05737A2A62CA3D9 * __this, int32_t ___newSpeed0, const RuntimeMethod* method)
-{
-	{
-		// speed = newSpeed;
-		int32_t L_0 = ___newSpeed0;
-		__this->set_speed_7(L_0);
 		// }
 		return;
 	}
@@ -9277,7 +9266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerController__ctor_mF30385729DAFDFCB
 		// int boundary = 75;
 		__this->set_boundary_4(((int32_t)75));
 		// public int speed = 1;
-		__this->set_speed_7(1);
+		__this->set_speed_8(1);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}

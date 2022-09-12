@@ -42,13 +42,11 @@ extern void PlayerController_MoveRover_m3FB5309BDE7412C3B4236FB38D1BF6642152C0CC
 extern void PlayerController_OnCollisionEnter_m68BA6D0E1F4613D0A8E7A86BA53F2A94AF4D9C84 (void);
 // 0x0000000F System.Void PlayerController::OnCollisionExit(UnityEngine.Collision)
 extern void PlayerController_OnCollisionExit_m20AC86A20344845608ED811671EC6227FF61A3FB (void);
-// 0x00000010 System.Void PlayerController::ChangeSpeed(System.Int32)
-extern void PlayerController_ChangeSpeed_m2C779D9BF7752D6255166D95F900D15395A2A6D4 (void);
-// 0x00000011 System.Void PlayerController::UpdateCoordinates()
+// 0x00000010 System.Void PlayerController::UpdateCoordinates()
 extern void PlayerController_UpdateCoordinates_m888A3A91558015C4412B265B16EA8FB30C160944 (void);
-// 0x00000012 System.Void PlayerController::.ctor()
+// 0x00000011 System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mF30385729DAFDFCB895C4939F6051DCE6C0327FB (void);
-static Il2CppMethodPointer s_methodPointers[18] = 
+static Il2CppMethodPointer s_methodPointers[17] = 
 {
 	LookCamera_Start_m477D97AEEB0AE668707135233A771CFEDB158758,
 	LookCamera_Update_mA407320027A42D7B3D927D1A96C5D21957FAE501,
@@ -65,11 +63,10 @@ static Il2CppMethodPointer s_methodPointers[18] =
 	PlayerController_MoveRover_m3FB5309BDE7412C3B4236FB38D1BF6642152C0CC,
 	PlayerController_OnCollisionEnter_m68BA6D0E1F4613D0A8E7A86BA53F2A94AF4D9C84,
 	PlayerController_OnCollisionExit_m20AC86A20344845608ED811671EC6227FF61A3FB,
-	PlayerController_ChangeSpeed_m2C779D9BF7752D6255166D95F900D15395A2A6D4,
 	PlayerController_UpdateCoordinates_m888A3A91558015C4412B265B16EA8FB30C160944,
 	PlayerController__ctor_mF30385729DAFDFCB895C4939F6051DCE6C0327FB,
 };
-static const int32_t s_InvokerIndices[18] = 
+static const int32_t s_InvokerIndices[17] = 
 {
 	1536,
 	1536,
@@ -86,7 +83,6 @@ static const int32_t s_InvokerIndices[18] =
 	1536,
 	1274,
 	1274,
-	1264,
 	1536,
 	1536,
 };
@@ -95,7 +91,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	18,
+	17,
 	s_methodPointers,
 	0,
 	NULL,

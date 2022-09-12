@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField]
-    GameObject rover;
+    
+    public GameObject rover;
     public Vector3 positionOffset;
 
     // Start is called before the first frame update
