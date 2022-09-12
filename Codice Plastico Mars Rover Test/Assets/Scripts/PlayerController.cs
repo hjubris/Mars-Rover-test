@@ -6,16 +6,20 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    //This field is displayed in the inspector to make it easier to tweak the boundaries.
     [SerializeField]
     int boundary = 75;
 
     public TextMeshProUGUI warningText;
     public TextMeshProUGUI coordinates;
-    public int speed = 1;
+
     public Camera mainCamera;
+
+    public int speed = 1;
 
     private void Start()
     {
+        //to avoid displaying the (quite large) warning text, initialize it to be invisible
         warningText.alpha = 0;
     }
 
@@ -49,7 +53,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// given a user input, moves the rover forward or backwards or turns it left and right
+    /// given a user input, moves the rover forward or backwards or turns it left and right, along with the camera and camera angle.
     /// </summary>
     private void MoveRover()
     {
@@ -76,9 +80,12 @@ public class PlayerController : MonoBehaviour
             mainCamera.transform.localRotation = Quaternion.Euler(rot); //update the camera's transform
         }
 
+        //After having moved, update the "coordinates" text object
         UpdateCoordinates();
     }
 
+    // When the rover detects a collision with an object, display a warning message, when the collision is not happening anymore, stop displaying it
+    #region Collision managment    
     private void OnCollisionEnter(Collision collision)
     {
         warningText.alpha = 1;
@@ -87,12 +94,11 @@ public class PlayerController : MonoBehaviour
     {
         warningText.alpha = 0;
     }
+    #endregion
 
-    public void ChangeSpeed(int newSpeed)
-    {
-        speed = newSpeed;
-    }
-
+    /// <summary>
+    /// Update the text in the top right to show the coordinates of the rover, displaying only the first two decimal digits for clarity
+    /// </summary>
     private void UpdateCoordinates()
     {
         coordinates.text = ("Current coordinates: X (" + transform.position.x.ToString("F2") + "), Y (1), Z (" + transform.position.z.ToString("F2") + ")");

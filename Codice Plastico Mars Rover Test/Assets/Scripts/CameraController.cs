@@ -7,7 +7,6 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     GameObject rover;
     public Vector3 positionOffset;
-    //public Quaternion rotation;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +17,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //sets the camera position to be the same as the rover's. In the editor, an offset can be set to change the viewpoint
         transform.position = rover.transform.position + positionOffset;
-       // transform.rotation = rotation;
     }
 }
